@@ -1,0 +1,15 @@
+{
+  "name": "scratch-vm",
+  "version": "1.0.0",
+  "description": "A wrapper around scratch-vm that logs user actions and sends them to an endpoint.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "goessm",
+  "license": "ISC",
+  "dependencies": {
+    "scratch-vm-default": "npm:scratch-vm@^0.2.0-prerelease.20211015091140"
+  },
+  "devDependencies": {}
+}
