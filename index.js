@@ -1,5 +1,5 @@
 const VirtualMachine = require('scratch-vm-default');
-const UserEventLog = require('./src/user-logging/user-event-log');
+const ScratchLogSender = require('scratch-log-sender')
 
 class LoggingVirtualMachine extends VirtualMachine {
     /**
@@ -8,7 +8,7 @@ class LoggingVirtualMachine extends VirtualMachine {
      */
     blockListener (e) {
         if (this.editingTarget) {
-            UserEventLog.logListenEvent(e, this.editingTarget.blocks);
+            ScratchLogSender.userEventLog.logListenEvent(e, this.editingTarget.blocks);
         }
         super.blockListener(e);
     }

@@ -9,6 +9,7 @@
   "author": "goessm",
   "license": "ISC",
   "dependencies": {
+    "scratch-log-sender": "https://github.com/goessm/scratch-log-sender/tarball/main",
     "scratch-vm-default": "npm:scratch-vm@^0.2.0-prerelease.20211015091140"
   },
   "devDependencies": {}
