@@ -3,7 +3,7 @@ const ScratchLogSender = require('scratch-log-sender')
 
 class LoggingVirtualMachine extends VirtualMachine {
     /**
-     * Handle a Blockly event for the current editing target.
+     * Overwrite blockListener to add log call.
      * @param {!Blockly.Event} e Any Blockly event.
      */
     blockListener (e) {
